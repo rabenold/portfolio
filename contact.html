@@ -3,26 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="stylesheet.css" rel="stylesheet">
+
     <title>Contact</title>
 </head>
 <body>
-    <h1>Contact</h1>
+    <nav class = "my_nav">
+        <a class = "my_link " href="./index.html"> Home</a>
+        <a class = "my_link" href="./projects.html"> Projects</a>
+        <a class = "my_link" href="./resume.html"> Resume</a>
+        <a class = "my_link current_page" href="./contact.html"> Contact</a>
+        <a class = "my_link" href="https://github.com/rabenold/">Github</a>
+    </nav>
+    </a>
+    <h1>Contact Me</h1>
     
-    <form action="mailto:foo@example.com" method="POST" enctype="text/plain">
-        <label>Email<input name="email" type="email"></label>   
-        <label>Subject<input name="subject"></label>    
-        <label><textarea name="body"></textarea></label>
-        <button>Submit</button>
+    <form class = "contact_form" action="mailto:foo@example.com" method="POST" enctype="text/plain">
+        <label>Email <input class="form_control" name="email" type="email"></label>   
+        <label>Subject <input class="form_control" name="subject"></label>    
+        <label>Message <textarea class="form_control" name="body"></textarea></label>
+        <button class = "sumbit_button">Submit</button>
     </form>
 
 
 
 
 
-
-    <nav>
-        <a href="./index.html"> Home</a>
-        <a href="./projects.html"> Projects</a>
-    </nav>
+  
 </body>
 </html>
