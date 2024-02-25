@@ -1,11 +1,10 @@
 
 html{
-  --color-accent: oklch(78% .1 304); 
+  --color-accent:  rgb(161, 213, 255); 
   accent-color: var(--color-accent);
   --background-color : oklch(92% .1 304);
   background-color: #efedf5;
 }
-
 
 body {
     /* Set line height to 1.5 times the font size
@@ -17,7 +16,6 @@ body {
     padding:auto; 
   }
 
-
 .current{
   margin-bottom:.4em;
 }
@@ -28,13 +26,13 @@ body {
   border-bottom-style: solid;
   border-bottom-color: oklch(80% 3% 200);
 }
+
 .my_link{
   flex:1; 
   text-decoration: none;
   color:inherit; 
   text-align:center;
   padding:.5em;
-
 }
 
 .my_link.current_page{
@@ -48,13 +46,11 @@ body {
   border-radius: 10%; 
 }
 
-a:hover{ 
+a.my_link:hover{ 
   border-bottom-width:.4em; 
   border-bottom-style: solid;
   border-bottom-color: var(--color-accent);
   padding-bottom:.1em;
-
-  
 }
 
 .contact_form{
@@ -86,12 +82,59 @@ image{
   align-items: start;
 }
 
+.projects img{
+  display:grid;
+  grid-template-columns: repeat(auto-fill,minmax(15em,1fr));
+  gap: 2em;
+  align-items: start;
+  height: 100%;
+  width: 100%; 
+}
+
+.projects video{
+  display:grid;
+  grid-template-columns: repeat(auto-fill,minmax(15em,1fr));
+  gap: 2em;
+  align-items: start;
+  height: 100%;
+  width: 100%; 
+}
+
+.course{
+  background-color: rgb(161, 213, 255);
+  width:100%;
+  height: 100%; 
+  font-size:100%;
+  text-align: center;
+}
+.resume_thing{
+  background-color: rgb(161, 213, 255);
+  width:100%;
+  height: 100%; 
+  font-size:100%;
+  text-align: left;
+  padding-left: 1em;
+}
+
+
+
+.course_break{
+  background-color: rgb(72, 255, 194);
+  width:100%;
+  height: 150%; 
+  font-size:100%;
+  text-align: center;
+}
+
+
+
 article .projects{
   grid-template-rows: subgrid;
   grid-row: span 3;
   text-wrap:balance;
   line-height: 1.1;
 }
+
 .section_header {
   background-color: lightblue;
   font-family: sans-serif;
@@ -103,9 +146,38 @@ article .projects{
   background-color: lightgrey;
   width:10%; 
   padding-left: 2ch; 
-
-
 }
+
+
 .my_resume{
   font-family: sans-serif; 
+}
+
+.caption{
+  text-align: center;
+  font-weight: 600;
+}
+
+
+
+
+.links{
+  text-align: center;
+  width:100%;
+  padding-top:3em;
+}
+
+
+.link{
+  flex:1; 
+  text-decoration: none;
+  color:inherit; 
+  text-align:center;
+  padding:.5em;
+}
+
+.link:hover{
+  background-color:  rgb(161, 213, 255);
+
+
 }
