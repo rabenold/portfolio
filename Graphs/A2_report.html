@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Vis & Society Assignment 2</title>
+	<link rel="stylesheet" href="https://vis-society.github.io/assignments/report.css" />
+</head>
+
+<body>
+	<a class = "current"> 
+		<nav class = "my_nav">
+			<a class = "my_link current_page" href="../index.html"> Home</a>
+			<a class = "my_link" href="../projects.html"> Projects</a>
+			<a class = "my_link current_page" href="../coursework.html"> Coursework</a>
+			<a class = "my_link" href="../resume.html"> Resume</a>
+			<a class = "my_link" href="../contact.html"> Contact</a>
+			<a class = "my_link" href="https://github.com/rabenold/">Github</a>
+		</nav>
+		</a>
+	<header>
+		<h1>
+			<small>Assignment 2</small>
+			Exploratory Data Analysis
+		</h1>
+
+		<p>
+			<strong>Ellie Rabenold</strong> — <em>rabenold@mit.edu</em>
+		</p>
+	</header>
+	<main>
+		<section>
+			<h2>Subtheme: Housing for the Rich</h2>
+
+			<h3>Overall Analysis Questions</h3>
+			<ol>
+				<li>What types of investors are doing the selling and buying?</li>
+				<li>Who is most often buying each type of building?</li>
+				<li>What does the selling landscape for non-investors look like?</li>
+			</ol>
+		</section>
+
+		<section>
+			<h2>Discoveries & Insights</h2>
+
+			<figure>
+				<img src="Screenshot 2024-02-23 212602.png" alt="" />
+				<figcaption>
+				I decided to first take a look at historical pricing trends for area homes. My chart takes advantage of the "usecode" field in the graph, so here I'm able to plot the yearly median price for single-, two-, and three-family homes. Obviously, I know housing market has changed in the past few decades, but it is disheartening to see how much more expensive homes have become.
+				</figcaption>
+			</figure>
+
+			<figure>
+				<img src="Screenshot 2024-02-24 222717.png" alt="" />
+				<figcaption>
+				In this chart I'm looking at the historical average property purchasing price for LLCs and Trusts versus non-LLC/Trust purchasing parties. One thing of note is that the LLC/Trust yearly average purchases are always higher than the non LLC/Trust purchases, which makes sense given LLCs and Trusts are more likely to be operated by comparatively wealthier parties. 
+				</figcaption>
+			</figure>
+
+			<figure>
+				<img src="Screenshot 2024-02-23 221357.png" alt="" />
+				<figcaption>
+					In this chart I'm taking a look at how many of the total tracked purchases are investor to investor transactions. This data is represented as percentages of the year's total purchases, and it's tracked from 2000 to 2022. Note the doubling in amount of investor-investor transactions over the years.
+				</figcaption>
+			</figure>
+
+			<figure>
+				<img src="Screenshot 2024-02-24 213406.png" alt="" />
+				<img src="Screenshot 2024-02-24 230010.png" alt="" /><br>
+				<img src="Screenshot 2024-02-24 230129.png" alt="" />
+
+				<figcaption>
+					In this chart I'm looking at a breakdown of residential building purchases by investors in 2020. Institutional investors are spending less on these residential properties than counterparts, while small investors and non-count investors are spending on average the most over all residence types.
+				</figcaption>
+			</figure>
+
+			<figure>
+				<img src="Screenshot 2024-02-24 201757.png" alt="" />
+				<figcaption>
+					This data set breaks down purchasing party types into investor and non-investor... Here, I'm taking a closer look at the distribution of investor types (Institutional, Large, Medium, and Small) over the years. Unfortunately, this chart represents a shortcoming in my Tableau skills - I struggled to convert my pie chart labels into percentages, and was unable to adequately represent all of the information I was hoping to bring to light in this chart.
+				</figcaption>
+			</figure>
+
+			<figure>
+				<img src="Screenshot 2024-02-24 203313.png" alt="" />
+				<figcaption>
+					This chart is similar to the previous pie, but it breaks down the types of investor sellers while filtering out non-investor sellers. Again, it is tracked over time, and again, I wasn't able to adequately reflect what I wanted to on the chart. 
+				</figcaption>
+			</figure>
+
+			<figure>
+				<img src="Screenshot 2024-02-24 202724.png" alt="" />
+				<figcaption>
+					The previous chart made me curious about the transactions between certain parties. Specifically, I was interested to learn more about the transactions that the institutional and large sellers and buyers engaged in, because I assumed that those parties would likely be able to leverage more money. In this graph, I'm looking at the average transaction price between an institutional investor seller and institutional and large investor buyers. Here, institutional buyers are consistently buying more expensive properties than large investors. 
+				</figcaption>
+			</figure>
+
+
+			<figure>
+				<img src="Screenshot 2024-02-24 202949.png" alt="" />
+				<figcaption>
+				From my last graph, I then decided to look at all of the transactions between institutional investor sellers and all types of buyers - including non-investsor buyers. To my surprise, I found that small investor buyers were buying more expensive properties than the large and medium investors, and in some years that group even outpaced the institutional investors. 
+				</figcaption>
+			</figure>
+
+			<figure>
+				<img src="Screenshot 2024-02-24 220316.png" alt="" />
+				<figcaption>
+					In this chart I'm looking at a snapshot of one year's data. Specificaly, I'm trying to gain some insight into which parties are buying apartment buildings. I based this chart off the assumption that investors would be more likely than non-investors to purchase multiple apartment units at once, so I'm only looking at purchases made by investors in 2005. Then, I'm breaking down the apartment type into two groups - purchases of four or fewer units, and more than four units. I find that most parties tend to purchase more than 4 units at once, and that this is dominated by medium-sized investors.
+				</figcaption>
+			</figure>
+
+			
+		
+		
+		</section>
+
+		<section>
+			<h2>Summary</h2>
+
+				I learned a number of things over the course of this exercise. Particularly, I found that small investors consistently account for half of purchases and sales participated in by an investor. I also learned that on average, investors classified as institutional are spending significantly more than large buyers, while small investors also spend a significant amount on average. Another thing that I learned is that medium-sized investors are spending the most on apartments with >4 units, and most investors don't seem to spend much on apartments with four units or less. Over time, the number of transactions that are conducted between two investor parties has doubled. 
+				This exercise also raised a lot of follow up questions. Particularly, I'm interested to learn more about the landscape of apartment purchases, and dig into how and why investor type might play into this. Furthermore, I'd like to spend more time looking at LLCs and Trusts, and seeing if there's anything of note in how these parties are selling or buying residential homes - and specifically the single-family and condiminium property types. 
+				I definitely struggled with this exercise, and I think that the main lesson I learned is that my lacking Tableau skills are holding me back from doing effective data wrangling and from generating interesting graphs. That's unfortunate, but at least there's opportunity for improvement over the next few assignments. 
+
+
+		</section>
+	</main>
+</body>
+</html>
