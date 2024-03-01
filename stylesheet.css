@@ -14,6 +14,7 @@ body {
     max-width:100ch;
     margin-inline: max(1em, (100% - 100ch) / 2);
     padding:auto; 
+    overflow-x: hidden;
   }
 
 .current{
@@ -44,6 +45,8 @@ body {
 
 .my_pic{
   border-radius: 10%; 
+  width: 50%;
+  height: auto;
 }
 
 a.my_link:hover{ 
@@ -155,9 +158,8 @@ article .projects{
 
 .caption{
   text-align: center;
-  font-weight: 600;
+  font-weight: 300;
 }
-
 
 
 
@@ -165,6 +167,18 @@ article .projects{
   text-align: center;
   width:100%;
   padding-top:3em;
+  padding-bottom:1%;
+  position:absolute;
+  bottom: 0;
+  left:0%; 
+  right:0%;
+}
+
+
+.scroll{
+
+  position: relative;
+  bottom:0;
 }
 
 
@@ -173,6 +187,7 @@ article .projects{
   text-decoration: none;
   color:inherit; 
   text-align:center;
+  display:inline;
   padding:.5em;
 }
 
