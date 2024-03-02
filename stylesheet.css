@@ -6,6 +6,10 @@ html{
   background-color: #efedf5;
 }
 
+.a3{
+  height:100%; 
+
+}
 body {
     /* Set line height to 1.5 times the font size
        and use the OS’s UI font as the website font
@@ -14,12 +18,25 @@ body {
     max-width:100ch;
     margin-inline: max(1em, (100% - 100ch) / 2);
     padding:auto; 
+    height:100%;
     overflow-x: hidden;
   }
 
 .current{
   margin-bottom:.4em;
 }
+
+
+::-webkit-scrollbar {
+  width: 9px;
+  height:5%;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(135, 217, 255); /* Color of the thumb */
+  border-radius: 6px; /* Roundness of the thumb */
+}
+
 
 .my_nav { 
   display:flex;
